@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class NineGagSafariTest {
+public class YouTubeSafariTest {
 
     private WebDriver driver;
     private WebDriverWait wait;
@@ -19,7 +19,7 @@ public class NineGagSafariTest {
 
     @Test
     public void searchComputerAndCheckHeader() {
-        driver.get("https://9gag.com");
+        driver.get("https://www.youtube.com");
 
         // Handle cookies popup if present
         try {
@@ -29,23 +29,17 @@ public class NineGagSafariTest {
             acceptBtn.click();
         } catch (Exception ignored) {}
 
-        // Click on Search button
-        WebElement searchButton = wait.until(
-                ExpectedConditions.elementToBeClickable(By.cssSelector("a.search"))
-        );
-        searchButton.click();
-
-        // Wait for the dynamic input field to appear
+        // Wait for the search input field to appear (YouTube search)
         WebElement searchInput = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[type='text']"))
+                ExpectedConditions.visibilityOfElementLocated(By.name("search_query"))
         );
 
-        // Enter search term
+        // Enter search term and press Enter
         searchInput.sendKeys("computer" + Keys.ENTER);
 
-        // Check if header is displayed
+        // Wait for the results header or section to appear
         WebElement header = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.id("top-navb"))
+                ExpectedConditions.visibilityOfElementLocated(By.id("container")) // sau alt id relevant
         );
 
         Assertions.assertTrue(header.isDisplayed(), "Header not displayed!");
@@ -53,6 +47,8 @@ public class NineGagSafariTest {
 
     @AfterEach
     public void tearDown() {
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }
