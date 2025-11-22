@@ -1,1 +1,14 @@
-NineGagSafariTest.class
+steps/ReviewSteps.class
+pages/CartPage.class
+steps/RegistrationSteps.class
+steps/ContactSteps.class
+pages/RegistrationPage.class
+runners/TestRunner.class
+hooks/Hooks.class
+steps/LoginSteps.class
+pages/ContactPage.class
+pages/ProductPage.class
+steps/CartSteps.class
+utils/DriverManager.class
+pages/LoginPage.class
+steps/SortingSteps.class

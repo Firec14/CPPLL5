@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="48.941" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="Adaugarea produselor in cosul de cumparaturi" name="Adaugare produs si verificare in cos" time="7.986">
+<system-out><![CDATA[
+Cand utilizatorul adauga primul produs in cos...............................passed
+Si utilizatorul deschide cosul..............................................passed
+Atunci produsul este in cosul de cumparaturi................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Formular de Contact" name="Trimitere formular contact complet" time="4.471">
+<system-out><![CDATA[
+Cand utilizatorul apasă Send................................................passed
+Atunci mesajul de contact este trimis.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Modal de Login" name="Login complet cu name și email" time="13.128">
+<system-out><![CDATA[
+Cand utilizatorul apasă Sign In.............................................passed
+Atunci login-ul este procesat...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Modal de Inregistrare" name="Inregistrare completa cu name, email, password" time="14.319">
+<system-out><![CDATA[
+Cand utilizatorul apasă Sign Up.............................................passed
+Atunci inregistrarea este procesata.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Review products" name="Add review with medium rating" time="8.94">
+<system-out><![CDATA[
+Given utilizatorul este pe pagina single product............................passed
+When utilizatorul da click pe butonul de review.............................passed
+And utilizatorul completeaza review-ul cu:..................................passed
+And utilizatorul trimite review-ul..........................................passed
+Then review-ul este vizibil in lista de review-uri..........................passed
+]]></system-out>
+</testcase>
+</testsuite>

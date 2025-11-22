@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: NineGagSafariTest
+Test set: runners.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.863 s - in NineGagSafariTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.02 s -- in runners.TestRunner
