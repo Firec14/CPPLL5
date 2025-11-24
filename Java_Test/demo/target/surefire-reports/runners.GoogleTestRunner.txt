@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: runners.TestRunner
+Test set: runners.GoogleTestRunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.02 s -- in runners.TestRunner
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.36 s -- in runners.GoogleTestRunner

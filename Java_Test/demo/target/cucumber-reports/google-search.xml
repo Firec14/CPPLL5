@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="37.541" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="Google Search Functionality Tests" name="Search in different languages" time="14.951">
+<system-out><![CDATA[
+Given I am on the Google search page........................................passed
+When I search for "hello" in English........................................passed
+Then I should see relevant results for "hello"..............................passed
+When I search for "hola" in Spanish.........................................passed
+Then I should see relevant results for "hola"...............................passed
+When I search for "bonjour" in French.......................................passed
+Then I should see relevant results for "bonjour"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Google Search Functionality Tests" name="Verify case sensitivity in Google Search" time="7.19">
+<system-out><![CDATA[
+Given I am on the Google search page........................................passed
+When I search for "TestCase"................................................passed
+Then I save the number of results...........................................passed
+When I search for "testcase"................................................passed
+Then the number of results should be similar to saved results...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Google Search Functionality Tests" name="Display calculator service when searching for &quot;calculator&quot;" time="7.433">
+<system-out><![CDATA[
+Given I am on the Google search page........................................passed
+When I search for "calculator"..............................................passed
+Then I should see the calculator service displayed..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Google Search Functionality Tests" name="Converter service appears at top when searching for conversion services" time="7.842">
+<system-out><![CDATA[
+Given I am on the Google search page........................................passed
+When I search for "Google converter services"...............................passed
+Then the conversion service should appear at the top of search results......passed
+]]></system-out>
+</testcase>
+</testsuite>

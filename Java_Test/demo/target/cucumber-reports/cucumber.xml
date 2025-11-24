@@ -1,31 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="48.941" tests="5" skipped="0" failures="0" errors="0">
-<testcase classname="Adaugarea produselor in cosul de cumparaturi" name="Adaugare produs si verificare in cos" time="7.986">
+<testsuite name="Cucumber" time="97.397" tests="9" skipped="0" failures="0" errors="0">
+<testcase classname="Adaugarea produselor in cosul de cumparaturi" name="Adaugare produs si verificare in cos" time="11.106">
 <system-out><![CDATA[
 Cand utilizatorul adauga primul produs in cos...............................passed
 Si utilizatorul deschide cosul..............................................passed
 Atunci produsul este in cosul de cumparaturi................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Formular de Contact" name="Trimitere formular contact complet" time="4.471">
+<testcase classname="Formular de Contact" name="Trimitere formular contact complet" time="4.688">
 <system-out><![CDATA[
 Cand utilizatorul apasă Send................................................passed
 Atunci mesajul de contact este trimis.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Modal de Login" name="Login complet cu name și email" time="13.128">
+<testcase classname="Google Search Functionality Tests" name="Search in different languages" time="15.126">
+<system-out><![CDATA[
+Given I am on the Google search page........................................passed
+When I search for "hello" in English........................................passed
+Then I should see relevant results for "hello"..............................passed
+When I search for "hola" in Spanish.........................................passed
+Then I should see relevant results for "hola"...............................passed
+When I search for "bonjour" in French.......................................passed
+Then I should see relevant results for "bonjour"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Google Search Functionality Tests" name="Verify case sensitivity in Google Search" time="11.246">
+<system-out><![CDATA[
+Given I am on the Google search page........................................passed
+When I search for "TestCase"................................................passed
+Then I save the number of results...........................................passed
+When I search for "testcase"................................................passed
+Then the number of results should be similar to saved results...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Google Search Functionality Tests" name="Display calculator service when searching for &quot;calculator&quot;" time="8.702">
+<system-out><![CDATA[
+Given I am on the Google search page........................................passed
+When I search for "calculator"..............................................passed
+Then I should see the calculator service displayed..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Google Search Functionality Tests" name="Converter service appears at top when searching for conversion services" time="8.361">
+<system-out><![CDATA[
+Given I am on the Google search page........................................passed
+When I search for "Google converter services"...............................passed
+Then the conversion service should appear at the top of search results......passed
+]]></system-out>
+</testcase>
+<testcase classname="Modal de Login" name="Login complet cu name și email" time="14.457">
 <system-out><![CDATA[
 Cand utilizatorul apasă Sign In.............................................passed
 Atunci login-ul este procesat...............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Modal de Inregistrare" name="Inregistrare completa cu name, email, password" time="14.319">
+<testcase classname="Modal de Inregistrare" name="Inregistrare completa cu name, email, password" time="13.892">
 <system-out><![CDATA[
 Cand utilizatorul apasă Sign Up.............................................passed
 Atunci inregistrarea este procesata.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Review products" name="Add review with medium rating" time="8.94">
+<testcase classname="Review products" name="Add review with medium rating" time="9.624">
 <system-out><![CDATA[
 Given utilizatorul este pe pagina single product............................passed
 When utilizatorul da click pe butonul de review.............................passed

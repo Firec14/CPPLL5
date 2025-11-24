@@ -19,10 +19,5 @@ import org.junit.runner.RunWith;
     tags = "not @skip"
 )
 public class TestRunner {
-    // Acest runner va executa toate scenariile Cucumber
-    // Pentru a rula teste specifice, folositi tags:
-    // tags = "@smoke" - ruleaza doar teste cu tag-ul @smoke
-    // tags = "@regression" - ruleaza doar teste cu tag-ul @regression
-    // tags = "@sorting or @cart" - ruleaza teste cu tag-ul @sorting SAU @cart
-    // tags = "@login and @smoke" - ruleaza teste cu AMBELE tag-uri
+
 }
